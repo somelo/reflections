@@ -1,0 +1,47 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+- Diff tool was very useful to find the bug quickly between two files that are really similar.
+- With this tool we could find the bug, it didn't fix it, only showed the bug.
+- Because of this course, I could learn to use Vim on a basic level.
+- To do this in linux, should use this command: diff -u old_file.fi new_file.fi 
+- In conclusion, Diff tool could help to produce good code by saving time, instead of doing it manually.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    By saving time showing the exact line where the bug is, instead of searching for it manually. 
+    It is useful for files with a lot of lines of code.
+    By having multiple old versions of a file, we can search for the last desired version of a project.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros: Having the confidence that the file works without bugs, and the possibility of doing tests and only saving until it works.
+    Cons: Having the possibility to lose important data. In case of code, it's possible to make bugs.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Because Git's target are projects, while Docs' are individual files.
+    In this little lesson, it is showed that we can use "git log" to see all the commits of a project's repository.
+    Also, it is mentioned the changes on a brief line (files), and it shows pluses and minuses proportional to the changes of each file.
+    Furthermore, we can use diff --git file1 file2 to compare a file within two commits. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Command git log shows all the commits with and ID, date, and author.
+    git diff allows to compare these commits just using the IDs.
+    In this lesson, it is also mentioned the command git config --global color.ui auto to manage colors in git diff comnand,
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Because in case of a bug, we can go back to the version without the bugs.
+    To do this we use the checkout command "git checkout commitID"
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    There are a lot of things I'd like to try.
+    First, I want to know how to configure branches.
+    Then, I'd like to create a repository for my thesis using Git.
+    This is the first step on gettin the engineer title.
