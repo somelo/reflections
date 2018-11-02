@@ -1,0 +1,8 @@
+When would you like to create a remote repository rather than keeping all your work local?
+
+When trying to access to the same project from different computers or to do collaborative work.
+Commands learnt in this section:
+- git remote: to see all the remote repositories in my local computer,
+- git remote add origin https...: to add a remote repository created manually on github and call it origin,
+- git remote -v: to see the remotes in more detail,
+- git push origin master: to sync the remote repository origin with local repository master.
