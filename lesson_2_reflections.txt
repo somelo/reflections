@@ -14,13 +14,59 @@ This lesson I learnt new git commands:
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+We use it to accumulate files involved in one logical change.
+In this section, I learnt new git commands:
+- git diff: difference between working directory and the staging area,
+- git diff --staged: difference between staging area and the latest commit,
+- git commmit -m "text of the commit"
+and we use git add and git commit for the first time.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+When we need to experiment or do another version of our project.
+In this section, I learnt the following git commands:
+- git branch: see the list of branches of the repository,
+- git branch newbranch: creates new branch,
+- git checkout branch1: we go the new branch route to experiment instead of master.
+
 How do the diagrams help you visualize the branch structure?
+
+By taking every commit as a node, and then thinking about how to reach a specific commit (reachability).
+In this section, I learnt the following git commands:
+- git branch -b newbranch: this command is equivalent to git branch newbranch and git checkout newbranch,
+- git log --graph --oneline master coins: shows visual representation between the branches master and coins,
+it was also showed that when a new branch (created by someone else) is checkout'd appears as "remote".
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+To have both changes (adds and removes) of both files into one,
+To have all those commits as both parents of the ID of the new commit (merge).
+In this section, I learnt the following commands:
+- git merge master branch1: merges master with branch1 in the branch this is checkout'd,
+- git show commit1: difference between commit1 and its parent,
+- git merge --arbot: in case of conflict, it is necessary to use this command.
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Git's automatic merging:
+Pros:
+- Saving time
+- Convenient to merge files made by different authors on different lines
+Cons:
+- it's only possible if both commits edited different pieces of code and different functions
+- Otherwise, we get conflicts
+
+Always doing merges manually:
+Pros:
+- Only useful when both commits edit the same piece of code or function
+Cons:
+- Spending a lot of time on looking at the diffs manually
+
+When a conflict happens, in the file there are marks to show where the conflict occurs. These are head, |||, ===, and >>>>.
+HEAD<<<<<: here it is put the code of the actual branch checkout'd,
+|||||: here is the code of the original file,
+=====: here is the code of the branch we're trying to commit with,
+>>>>> *here goes the name of the branch of the commit*
